@@ -1,0 +1,39 @@
+.InputForm {
+    padding: 2.5rem;
+    border-radius: 4px;
+    background-image: url("https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+}
+
+.InputForm .btn {
+    border-radius: 4px;
+}
+
+.InputForm form {
+    gap: 12px;
+}
+
+.InputForm .form-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.InputForm input {
+    width: 100%;
+    padding: .6rem;
+    border-radius: 4px;
+    border: 1px solid #e6e6e6;
+}
+
+@media (max-width: 768px) {
+    .InputForm {
+        padding: 1.5rem;
+    }
+
+    .InputForm .form-div {
+        flex-direction: column;
+    }
+
+    .InputForm form {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,146 @@
+.Header nav {
+    padding: 2rem 12px;
+    max-width: 924px;
+    margin: auto;
+    gap: 28px;
+    min-height: 100%;
+}
+
+.Header a {
+    color: #9e9aa7;
+    font-weight: 600;
+}
+
+.Header a.btn {
+    color: #fff !important;
+}
+
+.Header .nav-links {
+    list-style: none;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-basis: 100%;
+}
+
+.Header .btn-nav {
+    display: none;
+    background-color: transparent;
+    
+    color: #9e9aa7;
+}
+
+.Header .btn-nav i {
+    font-size: 2rem;
+    margin-right: .5rem;
+}
+
+.Header .header-content {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.Header .header-content div {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.Header li:nth-child(4) {
+    margin-left: auto ;
+}
+
+.Header h1 {
+    color: #35323e;
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+
+.Header .header-content img {
+    width: 50vw;
+    height: auto;
+}
+
+.Header p {
+    margin: 20px 0;
+    color: #9e9aa7;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .Header .btn-nav {
+        display: inline-block;
+        font-size: 1.5rem;
+    }
+
+    .Header .nav-links {
+        position: absolute;
+        top: 5.5rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        flex-direction: column;
+        background-color: #3b3054;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        width: 90%;
+        max-width: 450px;
+        visibility: hidden;
+    }
+
+    .Header a {
+        color: #bfbfbf;
+    }
+
+    li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .Header li:nth-child(4) {
+        margin-left: 0;
+    }
+
+    .Header li:nth-child(4)::before {
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: #bfbfbf;
+        margin: 1rem 0;
+    }
+
+    .Header .nav-links.active {
+        visibility: visible;
+    }
+
+    .Header .header-content {
+        flex-direction: column-reverse;
+        gap: 36px;
+    }
+
+    .Header .header-content h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        text-align: center;
+    }
+
+    .Header .header-content p {
+        font-size: 1.3rem;
+        font-weight: normal;
+        line-height: 1.8rem;
+        text-align: center;
+    }
+
+    .Header .header-content div {
+        width: 100%;
+    }
+
+    .Header .header-content img {
+        width: 120%;
+    }
+
+    .Header .header-content .btn {
+        margin-top: 28px;
+        font-size: 1.2rem;
+    }
+}
+
